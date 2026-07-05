@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Camila Rocha Eventos - Proposta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ====== SEÇÃO 1: APRESENTAÇÃO ====== -->
+    <section id="apresentacao" class="section">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="logo-camila.png" alt="Camila Rocha Eventos" />
+            </div>
+
+            <!-- Título com variável -->
+            <h1 class="titulo-principal">
+                <span class="destaque" id="nomeEscola">Colégio EME</span>
+                <br />
+                <span class="subtitulo">Proposta de Assessoria &amp; Cerimonial</span>
+            </h1>
+
+            <div class="linha-decorativa"></div>
+
+            <!-- Boas-vindas -->
+            <div class="boas-vindas">
+                <p id="mensagemBoasVindas">
+                    Olá, equipe do Colégio EME!<br />
+                    É com imensa satisfação que apresento nossa proposta personalizada 
+                    para transformar sua formatura em um evento inesquecível. 
+                    Com dedicação, criatividade e anos de experiência, 
+                    cuidamos de cada detalhe para que esse momento seja único.
+                </p>
+                <p class="assinatura-boasvindas">
+                    <i class="fas fa-quote-left"></i> Compartilhamos histórias! <i class="fas fa-quote-right"></i>
+                </p>
+            </div>
+
+            <button id="btnVisualizar" class="btn-principal">
+                <i class="fas fa-file-pdf"></i> Visualizar Proposta
+            </button>
+
+            <p class="scroll-hint">↓ Role para conhecer</p>
+        </div>
+    </section>
+
+    <!-- ====== SEÇÃO 2: PDF ====== -->
+    <section id="pdf-viewer" class="section" style="display: none;">
+        <div class="container pdf-container">
+            <div class="pdf-wrapper">
+                <iframe id="pdfIframe" src="" width="100%" height="700px"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SEÇÃO 3: ENCERRAMENTO ====== -->
+    <section id="encerramento" class="section" style="display: none;">
+        <div class="container encerramento-container">
+            <div class="linha-decorativa"></div>
+
+            <h2 class="titulo-encerramento">Camila Rocha Eventos</h2>
+            <p class="frase-impacto" id="mensagemAnos">
+                Há <strong>mais de 10 anos</strong> transformando sonhos em momentos inesquecíveis.
+            </p>
+
+            <div class="contatos">
+                <a href="#" id="linkWhatsapp" class="contato-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="#" id="linkInstagram" class="contato-link"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+
+            <div class="frase-final">
+                <i class="fas fa-quote-left"></i> Compartilhamos histórias! <i class="fas fa-quote-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONFIGURAÇÕES ====== -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

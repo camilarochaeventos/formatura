@@ -1,0 +1,296 @@
+/* ===== RESET E BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f0f0f0;
+    color: #764b36;
+    scroll-behavior: smooth;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background: #f0f0f0;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-principal {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #764b36;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-principal .destaque {
+    color: #af8459;
+    font-weight: 700;
+}
+
+.titulo-principal .subtitulo {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #764b36;
+    display: block;
+    margin-top: 0.3rem;
+    letter-spacing: 2px;
+}
+
+.linha-decorativa {
+    width: 80px;
+    height: 3px;
+    background: #af8459;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+}
+
+.boas-vindas {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #764b36;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(175, 132, 89, 0.15);
+}
+
+.boas-vindas .assinatura-boasvindas {
+    font-family: 'Handelson Three', cursive;
+    font-size: 1.4rem;
+    color: #af8459;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+.boas-vindas .assinatura-boasvindas i {
+    font-size: 0.9rem;
+    color: #af8459;
+    opacity: 0.7;
+}
+
+.btn-principal {
+    background: #af8459;
+    color: white;
+    border: none;
+    padding: 1rem 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(175, 132, 89, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.btn-principal:hover {
+    background: #764b36;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(118, 75, 54, 0.3);
+}
+
+.btn-principal i {
+    font-size: 1.3rem;
+}
+
+.scroll-hint {
+    margin-top: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #af8459;
+    letter-spacing: 3px;
+    animation: pulse 2s infinite;
+    font-weight: 300;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+.pdf-container {
+    padding: 1rem 0;
+}
+
+.pdf-wrapper {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(118, 75, 54, 0.10);
+    overflow: hidden;
+    padding: 0.5rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+#pdfIframe {
+    width: 100%;
+    min-height: 700px;
+    border: none;
+    border-radius: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.encerramento-container {
+    max-width: 700px;
+}
+
+.titulo-encerramento {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #764b36;
+    margin-bottom: 0.5rem;
+}
+
+.frase-impacto {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #764b36;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+.frase-impacto strong {
+    color: #af8459;
+    font-weight: 600;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.contato-link {
+    font-family: 'Open Sans', sans-serif;
+    color: #764b36;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.6rem 1.8rem;
+    border: 2px solid #af8459;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.contato-link:hover {
+    background: #af8459;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(175, 132, 89, 0.3);
+}
+
+.contato-link i {
+    font-size: 1.2rem;
+}
+
+.frase-final {
+    font-family: 'Handelson Three', cursive;
+    font-size: 1.8rem;
+    color: #af8459;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+}
+
+.frase-final i {
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 2rem;
+    }
+    
+    .titulo-principal .subtitulo {
+        font-size: 1rem;
+    }
+    
+    .boas-vindas {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .btn-principal {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .contatos {
+        gap: 1rem;
+    }
+    
+    .contato-link {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    
+    #pdfIframe {
+        min-height: 450px;
+    }
+    
+    .titulo-encerramento {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 200px;
+    }
+    
+    .titulo-principal {
+        font-size: 1.6rem;
+    }
+    
+    .boas-vindas {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    #pdfIframe {
+        min-height: 350px;
+    }
+}
