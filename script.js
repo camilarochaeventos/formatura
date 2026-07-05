@@ -5,22 +5,33 @@ document.addEventListener('DOMContentLoaded', function() {
     const pdfIframe = document.getElementById('pdfIframe');
 
     btnVisualizar.addEventListener('click', function() {
-        // Usa o nome do arquivo do config.js
-        const arquivoPDF = window.CONFIG_PDF || 'proposta.pdf';
+        const arquivoPDF = 'proposta.pdf';
         
-        // Carrega o PDF
-        pdfIframe.src = arquivoPDF;
+        // DETECTA SE É CELULAR
+        const isMobile = window.innerWidth <= 768;
         
-        // Mostra a seção do PDF
-        pdfViewer.style.display = 'flex';
-        
-        // Rola suavemente
-        pdfViewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        
-        // Mostra o encerramento
-        setTimeout(() => {
-            encerramento.style.display = 'flex';
-            encerramento.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 1500);
+        if (isMobile) {
+            // No celular: abre em nova aba
+            window.open(arquivoPDF, '_blank');
+            
+            // Mostra as seções mesmo assim
+            pdfViewer.style.display = 'flex';
+            pdfViewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            setTimeout(() => {
+                encerramento.style.display = 'flex';
+                encerramento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 1500);
+        } else {
+            // No computador: mostra no iframe
+            pdfIframe.src = arquivoPDF;
+            pdfViewer.style.display = 'flex';
+            pdfViewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            setTimeout(() => {
+                encerramento.style.display = 'flex';
+                encerramento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 1500);
+        }
     });
 });
