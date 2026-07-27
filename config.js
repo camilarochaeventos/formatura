@@ -23,6 +23,7 @@ const CONFIG = {
     contatos: {
         whatsapp: 'https://wa.me/5521988666854', // WhatsApp da Camila
         instagram: 'https://instagram.com/camilarochaeventos' // Instagram
+	site: 'https://camilarochaeventos.com.br/' // Site da Camila
     },
 
     // ARQUIVO PDF
