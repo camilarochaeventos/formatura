@@ -22,8 +22,8 @@ const CONFIG = {
     // CONTATOS - LINKS CORRETOS!
     contatos: {
         whatsapp: 'https://wa.me/5521988666854', // WhatsApp da Camila
-        instagram: 'https://instagram.com/camilarochaeventos' // Instagram
-	site: 'https://camilarochaeventos.com.br/' // Site da Camila
+        instagram: 'https://instagram.com/camilarochaeventos', // ← VÍRGULA AQUI!
+        site: 'https://camilarochaeventos.com.br/' // Site da Camila
     },
 
     // ARQUIVO PDF
@@ -46,5 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('mensagemAnos').innerHTML = CONFIG.experiencia.texto;
     document.getElementById('linkWhatsapp').href = CONFIG.contatos.whatsapp;
     document.getElementById('linkInstagram').href = CONFIG.contatos.instagram;
+    document.getElementById('linkSite').href = CONFIG.contatos.site; // ← NOVO!
     window.CONFIG_PDF = CONFIG.pdf.arquivo;
 });
